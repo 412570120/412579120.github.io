@@ -1,20 +1,69 @@
- <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Personal Page</title>
-       <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-       <header>
-           <h1>Welcome to My Personal Page</h1>
-       </header>
-       <section>
-           <p>This is my personal page where I share my projects and thoughts.</p>
-       </section>
-       <footer>
-           <p>Contact me at: myemail@example.com</p>
-       </footer>
-   </body>
-   </html>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飲品介紹網站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>飲品介紹</h1>
+        <nav>
+            <ul>
+                <li><a href="#tea">茶類</a></li>
+                <li><a href="#coffee">咖啡類</a></li>
+                <li><a href="#juice">果汁類</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tea" class="drink-category">
+            <h2>茶類</h2>
+            <div class="drink-card">
+                <img src="https://via.placeholder.com/150" alt="綠茶">
+                <h3>綠茶</h3>
+                <p>綠茶是一種未發酵的茶，保留了天然的茶香和營養成分。</p>
+            </div>
+            <div class="drink-card">
+                <img src="https://via.placeholder.com/150" alt="紅茶">
+                <h3>紅茶</h3>
+                <p>紅茶是全發酵茶，味道濃厚，適合搭配牛奶。</p>
+            </div>
+        </section>
+
+        <section id="coffee" class="drink-category">
+            <h2>咖啡類</h2>
+            <div class="drink-card">
+                <img src="https://via.placeholder.com/150" alt="美式咖啡">
+                <h3>美式咖啡</h3>
+                <p>美式咖啡是用大量水沖泡的咖啡，味道清淡。</p>
+            </div>
+            <div class="drink-card">
+                <img src="https://via.placeholder.com/150" alt="拿鐵">
+                <h3>拿鐵</h3>
+                <p>拿鐵是由濃縮咖啡和蒸汽牛奶混合而成，口感順滑。</p>
+            </div>
+        </section>
+
+        <section id="juice" class="drink-category">
+            <h2>果汁類</h2>
+            <div class="drink-card">
+                <img src="https://via.placeholder.com/150" alt="橙汁">
+                <h3>橙汁</h3>
+                <p>橙汁是用新鮮橙子榨成的，富含維他命C。</p>
+            </div>
+            <div class="drink-card">
+                <img src="https://via.placeholder.com/150" alt="蘋果汁">
+                <h3>蘋果汁</h3>
+                <p>蘋果汁口感清甜，適合各個年齡層。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 飲品介紹網站. 版權所有.</p>
+    </footer>
+</body>
+</html>
