@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-image: url('2.jpg'); /* 添加背景圖片 */
+    background-image: url('images/2.jpg'); /* 添加背景圖片 */
     background-size: cover; /* 背景圖片覆蓋整個 header */
     background-position: center;
     position: relative;
