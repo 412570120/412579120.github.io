@@ -1,89 +1,108 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #CECEFF;
+    background-color: #fce4ec; /* 淺粉色背景 */
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #00BBFF;
+    background-color: #212121; /* 黑色背景 */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+header h1 {
+    font-size: 2.5em;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-}
-
-.ride-category, .ticket-info, .contact-info {
-    margin-bottom: 40px;
-}
-
-.ride-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.ride-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    flex: 1 1 calc(33% - 20px); /* 3 columns layout */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.ride-card img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.ride-card h3 {
+header p {
+    font-size: 1.2em;
     margin-top: 10px;
 }
 
-.ride-card p {
-    margin-top: 5px;
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.ride-card:hover {
-    transform: translateY(-5px);
+.playlist-info {
+    margin-bottom: 30px;
+}
+
+.playlist-info h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.song-list h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.song-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.song-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8bbd0; /* 淺粉色背景 */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.song-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.song-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.song-title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.artist {
+    color: #777;
+}
+
+.song-link {
+    text-decoration: none;
+    color: #d81b60; /* 深粉色連結 */
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.song-link:hover {
+    color: #ad1457; /* 深色連結效果 */
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #212121; /* 黑色背景 */
     color: white;
     text-align: center;
-    padding: 15px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 10px;
+    margin-top: 40px;
 }
