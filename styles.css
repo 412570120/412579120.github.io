@@ -12,16 +12,15 @@ body {
 }
 
 header {
-    position: relative;
-    background-image: url('images/2.jpg'); /* 背景圖片 */
-    background-size: cover; /* 讓背景圖片覆蓋整個容器 */
+    background-image: url('images/2.jpg');
+    background-size: cover;
     background-position: center;
+    position: relative;
     color: white;
     padding: 20px;
     text-align: center;
-    height: 300px; /* 設置高度確保圖片可見 */
+    height: 300px;
 }
-
 header::before {
     content: '';
     position: absolute;
