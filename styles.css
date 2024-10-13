@@ -6,35 +6,36 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('images/2.jpg');
+    background-color: #fce4ec; /* 淺粉色背景 */
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-image: url('images/2.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    position: relative; /* 使得可以使用絕對定位的子元素 */
+    background-image: url('images/2.jpg'); /* 將背景設為圖片 */
+    background-size: cover; /* 讓背景圖片覆蓋整個容器 */
+    background-position: center; /* 背景圖片居中 */
     color: white;
     padding: 20px;
     text-align: center;
-    height: 300px;
+    height: 300px; /* 設置適當的高度 */
 }
+
 header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 黑色遮罩，透明度 50% */
-    z-index: 1; /* 遮罩層位於背景圖片之上 */
+    content: ''; /* 生成一個空的內容 */
+    position: absolute; /* 絕對定位 */
+    top: 0; /* 顶部對齊 */
+    left: 0; /* 左側對齊 */
+    width: 100%; /* 寬度100% */
+    height: 100%; /* 高度100% */
+    background-color: rgba(0, 0, 0, 0.5); /* 黑色遮罩，透明度50% */
+    z-index: 1; /* 在背景圖片之上 */
 }
 
 header h1, header p {
-    position: relative;
-    z-index: 2; /* 確保文字顯示在遮罩層之上 */
+    position: relative; /* 確保文字位於遮罩層之上 */
+    z-index: 2; /* 文字層級設置高於遮罩層 */
 }
 
 header h1 {
@@ -45,7 +46,6 @@ header p {
     font-size: 1.2em;
     margin-top: 10px;
 }
-
 
 main {
     max-width: 900px;
