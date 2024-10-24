@@ -6,16 +6,7 @@
     <title>小羊音角落</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // 當點擊每個 h2 標題時，對應的 ul 區塊會有滑動顯示/隱藏效果
-            $(".song-list h2").click(function() {
-                $(this).next("ul").slideToggle("slow");
-            });
-        });
-    </script>
 </head>
-
 <body>
     <header>
         <h1>小羊音角落</h1>
@@ -26,7 +17,7 @@
         <section class="song-list">
             <h2>壹歌:休閒睡眠羊</h2>
             <p>想要放鬆的時候，聽它就對了咩!</p>
-             <ul>
+            <ul>
                 <li>
                     <img src="images/123.jpg" alt="晚安咩" class="song-img">
                     <div class="song-details">
@@ -34,7 +25,7 @@
                         <a href="https://www.youtube.com/watch?v=RNdzNEKTrPU" class="song-link" target="_blank">立即聽歌咩</a>
                     </div>
                 </li>
-             </ul>  
+            </ul>  
         </section>
 
         <section class="song-list">
@@ -51,7 +42,7 @@
             </ul>
         </section>
 
-         <section class="song-list">
+        <section class="song-list">
             <h2>參歌:狂歡派對</h2>
             <p>咩咩也可以跳舞!</p>
             <ul>
@@ -62,14 +53,14 @@
                         <a href="https://www.youtube.com/watch?v=CZlfbep2LdU" class="song-link" target="_blank">立即聽歌咩</a>
                     </div>
                 </li>
-                 <li>
+                <li>
                     <img src="images/052.jpg" alt="嗨了咩" class="song-img">
                     <div class="song-details">
                         <span class="song-title">《提拉米蘇能吃嗎》</span>
                         <a href="https://www.youtube.com/watch?v=sg8tJnndyiI" class="song-link" target="_blank">立即聽歌咩</a>
                     </div>
                 </li>
-                 <li>
+                <li>
                     <img src="images/333.jpg" alt="嗨了咩" class="song-img">
                     <div class="song-details">
                         <span class="song-title">《睡衣派對!》</span>
@@ -80,6 +71,20 @@
         </section>
     </main>
     <footer>
+        <p>小羊也能聽歌，權利為小羊咩咩所有</p>
+    </footer>
+    
+    <script>
+        $(document).ready(function() {
+            // 當點擊每個 h2 標題時，對應的 ul 區塊會有滑動顯示/隱藏效果
+            $(".song-list h2").click(function() {
+                $(this).next("ul").slideToggle("slow");
+            });
+        });
+    </script>
+</body>
+</html>
+
       
 <p>小羊也能聽歌，權利為小羊咩咩所有</p>
 
