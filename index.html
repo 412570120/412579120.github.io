@@ -6,6 +6,14 @@
     <title>小羊音角落</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // 當點擊每個 h2 標題時，對應的 ul 區塊會有滑動顯示/隱藏效果
+            $(".song-list h2").click(function() {
+                $(this).next("ul").slideToggle("slow");
+            });
+        });
+    </script>
 </head>
 
 <body>
